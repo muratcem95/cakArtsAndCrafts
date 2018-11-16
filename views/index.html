@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../index.css">
+        
+        <title>earnMore</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1>earnMore</h1>
+            <div id="employer_section">
+                <h4>Employers</h4>
+                <form id="employer_sign_up_form" method="post" action="employer/signUp">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="employer_sign_up_email" name="employer_sign_up_email" placeholder="Employer Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="employer_sign_up_password" name="employer_sign_up_password" placeholder="Employer Password">
+                        <small class="form-text text-muted">Your password must contain at least 6 characters.</small>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+                <form id="employer_log_in_form" method="post" action="../employer/logIn">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="employer_log_in_email" name="employer_log_in_email" placeholder="Employer Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="employer_log_in_password" name="employer_log_in_password" placeholder="Employer Password">
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+                </form>
+            </div>    
+            <div id="employee_section">
+                <h4>Employee Section</h4>
+                <form id="employee_sign_up_form" method="post" action="employee/signUp">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="employee_sign_up_email" name="employee_sign_up_email" placeholder="Employee Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="employee_sign_up_password" name="employee_sign_up_password" placeholder="Employee Password">
+                        <small class="form-text text-muted">Your password must contain at least 6 characters.</small>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+                <form id="employee_log_in_form" method="post" action="employee/logIn">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="employee_log_in_email" name="employee_log_in_email" placeholder="Employee Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="employee_log_in_password" name="employee_log_in_password" placeholder="Employee Password">
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+                </form>
+            </div>    
+        </div>    
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="../index.js"></script>
+    </body>
+</html>
