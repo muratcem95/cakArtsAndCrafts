@@ -1,0 +1,69 @@
+#logo {
+    width: 70px;
+}
+.btn {
+    color: #F8F9FA;
+    background-color: #ffc25c;
+}
+.jumbotron {
+    background-color: #ABF0D1;
+    text-align: center;
+}
+h1 {
+    color: dimgray;
+}
+.all_i {
+    border: none;
+    color:#FFA209;
+}
+#our_donations {
+    background-color:whitesmoke;
+    color: dimgray;
+}
+#sick_kids_logo {
+    width: 45px;
+}
+.alert {
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 72px;
+    justify-items: center;
+}
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.grid-item:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 200ms;
+}
+.product_name {
+    color: #FFA209;
+    font-size: 110%;
+}
+.product_details {
+    font-size: 90%;
+}
+.product_price {
+    font-size: 90%;
+}
+.offer {
+    color: dimgray;
+    background-color: #ABF0D1;
+}
+#modal-pname {
+    color: #FFA209;
+}
+.cad {
+    font-size: 80%;
+}
+.note {
+    font-size: 70%;
+    margin-top: -10px;
+    color: gray;
+}
