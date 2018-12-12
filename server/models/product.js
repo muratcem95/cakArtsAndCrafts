@@ -6,29 +6,34 @@ const productSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    image1: {
+    imageOne: {
         type: String,
-        required: true,
+        default: null,
         trim: true
     },
-    image2: {
+    imageTwo: {
         type: String,
-        required: true,
+        default: null,
         trim: true
     },
-    image3: {
+    imageThree: {
         type: String,
-        required: true,
+        default: null,
         trim: true
     },
-    image4: {
+    imageFour: {
         type: String,
-        required: true,
+        default: null,
         trim: true
     },
-    image5: {
+    imageFive: {
         type: String,
-        required: true,
+        default: null,
+        trim: true
+    },
+    imageSix: {
+        type: String,
+        default: null,
         trim: true
     },
     name: {

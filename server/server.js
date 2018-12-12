@@ -30,14 +30,10 @@ app.get('/contactUs', (req, res) => {
     res.sendFile('contactUs/contactUs.html');
 });
 
-app.post('/contactUsForm', (req, res) => {
-    //email gelsin bana
-});
-
 app.get('/allItems', (req, res) => {  
-    //Products render et
-    
-    res.render("allItems/allItems.html");
+    Product.find().then((products) => {
+        res.render("allItems/allItems.html");
+    }).catch((e) => res.send("Can not Product.find()."));
 });
 
 app.get('/bags', (req, res) => {   
@@ -56,8 +52,20 @@ app.get('/gloves', (req, res) => {
     res.render("gloves/gloves.html");
 });
 
+app.get('/addProduct', (req, res) => {
+    res.sendFile('addProduct/addProduct.html');
+});
+
+app.post('/contactUsForm', (req, res) => {
+    //email gelsin bana
+});
+
 app.post('/buyForm', (req, res) => {
     //email gelsin bana
+});
+
+app.post('/addProductForm', (req, res) => {
+    
 });
 
 //IO CONNECTIONS
