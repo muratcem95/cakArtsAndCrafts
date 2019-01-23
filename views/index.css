@@ -2,19 +2,16 @@
     width: 70px;
 }
 .btn {
-    color: #F8F9FA;
-    background-color: #ffc25c;
+    color: dimgray;
+    background-color: #ABF0D1;
 }
 .jumbotron {
     background-color: #ABF0D1;
     text-align: center;
+    padding-top:135px;
 }
 h1 {
     color: dimgray;
-}
-.all_i {
-    border: none;
-    color:#FFA209;
 }
 #our_donations {
     background-color:whitesmoke;
@@ -42,28 +39,32 @@ h1 {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     transition: box-shadow 200ms;
 }
-.product_name {
-    color: #FFA209;
-    font-size: 110%;
+#buy {
+    margin-top: 20px;
 }
-.product_details {
-    font-size: 90%;
+#sold_out {
+    margin-top: 20px;
 }
-.product_price {
-    font-size: 90%;
+.card-title {
+    margin-top: 15px;
 }
-.offer {
-    color: dimgray;
-    background-color: #ABF0D1;
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index:9999;
 }
-#modal-pname {
-    color: #FFA209;
+#view_cart {
+    margin-left: 20px;
+    color: white;
+    background-color: #ffc25c
 }
-.cad {
-    font-size: 80%;
+#contact_us {
+    border: 1px solid #ffc25c;
+    border-radius: 5px;
 }
-.note {
-    font-size: 70%;
-    margin-top: -10px;
-    color: gray;
+.hide {
+    display: none;
+}
+#name {
+    color: mediumpurple;
 }

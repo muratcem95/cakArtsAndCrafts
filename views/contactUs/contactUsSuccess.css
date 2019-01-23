@@ -1,0 +1,18 @@
+#logo {
+    width: 70px;
+}
+.btn {
+    color: white;
+    background-color: #ffc25c;
+}
+.alert {
+    text-align: center;
+    margin-top: 30px;
+}
+#view_cart {
+    margin-left: 20px;
+}
+#contact_us {
+    border: 1px solid #ffc25c;
+    border-radius: 5px;
+}

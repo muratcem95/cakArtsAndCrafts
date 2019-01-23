@@ -1,0 +1,21 @@
+#logo {
+    width: 70px;
+}
+.btn {
+    color: dimgray;
+    background-color: #ABF0D1;
+}
+h4 {
+    color: dimgray;
+    text-align: center;
+    margin: 30px;
+}
+#view_cart {
+    margin-left: 20px;
+    color: white;
+    background-color: #ffc25c;
+}
+#contact_us {
+    border: 1px solid #ffc25c;
+    border-radius: 5px;
+}
