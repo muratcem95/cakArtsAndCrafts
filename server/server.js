@@ -26,8 +26,6 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-db.addresses.createIndex( { "xmpp_id": 1 }, { sparse: true } );
-
 app.set('views', viewsPath);  
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);

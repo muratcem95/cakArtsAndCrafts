@@ -10,20 +10,16 @@ const ProductSchema = new mongoose.Schema({
         required: true
     },
     imageTwo: {
-        type: String,
-        default: null
+        type: String
     },
     imageThree: {
-        type: String,
-        default: null
+        type: String
     },
     imageFour: {
-        type: String,
-        default: null
+        type: String
     },
     imageFive: {
-        type: String,
-        default: null
+        type: String
     },
     firstName: {
         type: String,
@@ -31,16 +27,13 @@ const ProductSchema = new mongoose.Schema({
         unique: true
     },
     secondName: {
-        type: String,
-        default: null
+        type: String
     },
     thirdName: {
-        type: String,
-        default: null
+        type: String
     },
     details: {
-        type: String,
-        required: true
+        type: String
     },
     height: {
         type: Number,
