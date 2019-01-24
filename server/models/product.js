@@ -27,8 +27,7 @@ const ProductSchema = new mongoose.Schema({
     },
     firstName: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     secondName: {
         type: String,
