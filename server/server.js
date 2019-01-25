@@ -48,24 +48,42 @@ app.get('/allItems', (req, res) => {
     }).catch((e) => res.send("Can not find the products, please try again later."));
 });
 
-//app.get('/bags', (req, res) => {   
-//    Product.find({style: "bag"}).sort({ firstName: 'asc' }).then((products) => {
-//        res.render("bags/bags.html", {products});
-//    }).catch((e) => res.send("Can not find the products, please try again later."));
-//});
-//
-//app.get('/beanies', (req, res) => {   
-//    res.render("beanies/beanies.html");
-//});
-//
-//app.get('/scarfs', (req, res) => {   
-//    res.render("scarfs/scarfs.html");
-//});
-//
-//app.get('/gloves', (req, res) => {   
-//    res.render("gloves/gloves.html");
-//});
-//
+app.get('/bags', (req, res) => {   
+    Product.find({style: "bag"}).sort({ firstName: 'asc' }).then((products) => {
+        res.render("bags/bags.html", {products});
+    }).catch((e) => res.send("Can not find the products, please try again later."));
+});
+
+app.get('/beanies', (req, res) => {   
+    Product.find({style: "beanie"}).sort({ firstName: 'asc' }).then((products) => {
+        res.render("beanies/beanies.html", {products});
+    }).catch((e) => res.send("Can not find the products, please try again later."));
+});
+
+app.get('/scarfs', (req, res) => {   
+    Product.find({style: "scarf"}).sort({ firstName: 'asc' }).then((products) => {
+        res.render("scarfs/scarfs.html", {products});
+    }).catch((e) => res.send("Can not find the products, please try again later."));
+});
+
+app.get('/gloves', (req, res) => {   
+    Product.find({style: "glove"}).sort({ firstName: 'asc' }).then((products) => {
+        res.render("gloves/gloves.html", {products});
+    }).catch((e) => res.send("Can not find the products, please try again later."));
+});
+
+app.get('/accessories', (req, res) => {   
+    Product.find({style: "accessory"}).sort({ firstName: 'asc' }).then((products) => {
+        res.render("accessories/accessories.html", {products});
+    }).catch((e) => res.send("Can not find the products, please try again later."));
+});
+
+app.get('/combinations', (req, res) => {   
+    Product.find({style: "combination"}).sort({ firstName: 'asc' }).then((products) => {
+        res.render("combinations/combinations.html", {products});
+    }).catch((e) => res.send("Can not find the products, please try again later."));
+});
+
 app.post('/contactUsForm', (req, res) => {
     var mailOptions = {
         from: 'muratcem95@gmail.com',

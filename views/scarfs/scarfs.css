@@ -1,0 +1,70 @@
+#logo {
+    width: 70px;
+}
+.btn {
+    color: dimgray;
+    background-color: #ABF0D1;
+}
+h3 {
+    text-align: center;
+    padding-top:135px;
+    margin-bottom: 40px; 
+}
+h1 {
+    color: dimgray;
+}
+#our_donations {
+    background-color:whitesmoke;
+    color: dimgray;
+}
+#sick_kids_logo {
+    width: 45px;
+}
+.alert {
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 72px;
+    justify-items: center;
+}
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.grid-item:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 200ms;
+}
+#buy {
+    margin-top: 20px;
+}
+#sold_out {
+    margin-top: 20px;
+}
+.card-title {
+    margin-top: 15px;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index:9999;
+}
+#view_cart {
+    margin-left: 20px;
+    color: white;
+    background-color: #ffc25c
+}
+#contact_us {
+    border: 1px solid #ffc25c;
+    border-radius: 5px;
+}
+.hide {
+    display: none;
+}
+#name {
+    color: mediumpurple;
+}
