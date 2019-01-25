@@ -43,16 +43,16 @@ app.get('/contactUs', (req, res) => {
 });
 
 app.get('/allItems', (req, res) => {  
-    Product.find().then((products) => {
+    Product.find().sort({ firstName: 'asc' }).then((products) => {
         res.render("index.html", {products});
     }).catch((e) => res.send("Can not find the products, please try again later."));
 });
 
-app.get('/bags', (req, res) => {   
-    Product.find({style: "bag"}).then((products) => {
-        res.render("bags/bags.html", {products});
-    }).catch((e) => res.send("Can not find the products, please try again later."));
-});
+//app.get('/bags', (req, res) => {   
+//    Product.find({style: "bag"}).sort({ firstName: 'asc' }).then((products) => {
+//        res.render("bags/bags.html", {products});
+//    }).catch((e) => res.send("Can not find the products, please try again later."));
+//});
 //
 //app.get('/beanies', (req, res) => {   
 //    res.render("beanies/beanies.html");
