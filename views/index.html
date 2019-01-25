@@ -178,16 +178,7 @@
                                 <input type="hidden" name="cmd" value="_s-xclick">
                                 <input type="hidden" name="hosted_button_id" value="WQ9H9ST9PTGW2">
                                 <table><tr><td><input type="hidden" name="on0" value="Item"></td></tr><tr><td><select class="hide" name="os0">
-                                    {{#if thirdName}} 
-                                        <option value="{{firstName}} {{secondName}} {{thirdName}}">{{firstName}} {{secondName}} {{thirdName}} ${{price}}.00 CAD</option>
-                                    {{else}}
-                                        {{#if secondName}}
-                                            <option value="{{firstName}} {{secondName}}">{{firstName}} {{secondName}} ${{price}}.00 CAD</option>
-                                        {{else}}
-                                            <option value="{{firstName}}">{{firstName}} ${{price}}.00 CAD</option>
-                                        {{/if}}
-                                    {{/if}}
-                                   
+                                    <option value="{{firstName}}">{{firstName}} ${{price}}.00 CAD</option>
                                 </select> </td></tr></table>
                                 <input type="hidden" name="currency_code" value="CAD">
                                 <button id="buy" class="btn">Buy</button>
